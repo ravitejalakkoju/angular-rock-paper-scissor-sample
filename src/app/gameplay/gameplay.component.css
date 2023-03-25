@@ -1,0 +1,45 @@
+.gameplay {
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.action-buttons-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 1rem;
+  gap: 2rem;
+}
+
+.btn-action {
+  width: inherit;
+  background-color: black;
+  color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: none;
+  font-size: 4rem;
+}
+
+.btn-action:hover {
+  cursor: pointer;
+  color: black;
+  box-shadow: 0 0 5px 0 black;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 700px) {
+  .action-buttons-list {
+    flex-direction: column;
+  }
+  .btn-action {
+    height: 150px;
+    width: 150px;
+    font-size: 3rem;
+  }
+}

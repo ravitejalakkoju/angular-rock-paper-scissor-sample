@@ -1,0 +1,4 @@
+<main class="main">
+  <app-scorecard #scorecard></app-scorecard>
+  <app-gameplay (winnerChosen)="scorecard.updateScore($event)"></app-gameplay>
+</main>
